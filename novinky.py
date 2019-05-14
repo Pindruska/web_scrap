@@ -7,7 +7,8 @@ import requests
 from lxml import html
 import re
 
-page = requests.get('https://www.novinky.cz/archiv?id=7').text
+url = 'https://www.novinky.cz/archiv?id=7'
+page = requests.get(url).text
 soup = BeautifulSoup(page, 'lxml')
 
 i = 0
